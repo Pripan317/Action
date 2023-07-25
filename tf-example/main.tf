@@ -27,6 +27,11 @@ resource "aws_instance" "app_server" {
     Name = var.ec2_name
   }
 }
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "PripanPiyucfgtr"  
+  acl    = "private"  
+
+}
 
 
 
