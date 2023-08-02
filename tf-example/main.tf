@@ -28,7 +28,7 @@ resource "aws_instance" "app_server" {
   }
 }
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "pripanpiyucfgtr"  
+  bucket = "pripanwepiyucfgtr"  
   acl    = "private"  
 
 }
