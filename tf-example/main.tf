@@ -14,9 +14,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-provider "aws" {
-  region = "us-east-1"
-}
+
 
 resource "aws_instance" "app_server" {
   ami           = data.aws_ami.ubuntu.id
